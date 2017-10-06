@@ -2,5 +2,4 @@
     <string name="app_name">ContactLearn</string>
     <string name="btn_prev">Previous</string>
     <string name="btn_next">Next</string>
-    <string name="name">Name:</string>
 </resources>

@@ -36,14 +36,14 @@
                 android:layout_alignParentLeft="true"
                 android:background="@android:color/holo_blue_dark"
                 android:orientation="horizontal"
-                app:layout_widthPercent="47.5%"></LinearLayout>
+                app:layout_widthPercent="47.5%"/>
 
             <LinearLayout
                 android:id="@+id/box2"
                 android:layout_alignParentRight="true"
                 android:background="@android:color/holo_blue_dark"
                 android:orientation="horizontal"
-                app:layout_widthPercent="47.5%"></LinearLayout>
+                app:layout_widthPercent="47.5%"/>
         </android.support.percent.PercentRelativeLayout>
 
         <android.support.v4.widget.Space
@@ -64,14 +64,14 @@
                 android:layout_alignParentLeft="true"
                 android:background="@android:color/holo_blue_dark"
                 android:orientation="horizontal"
-                app:layout_widthPercent="47.5%"></LinearLayout>
+                app:layout_widthPercent="47.5%"/>
 
             <LinearLayout
                 android:id="@+id/box4"
                 android:layout_alignParentRight="true"
                 android:background="@android:color/holo_blue_dark"
                 android:orientation="horizontal"
-                app:layout_widthPercent="47.5%"></LinearLayout>
+                app:layout_widthPercent="47.5%"/>
 
         </android.support.percent.PercentRelativeLayout>
 
