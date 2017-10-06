@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hu.miskolc.uni.iit.contactlearn.activities.ContactListActivity">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_gravity="center"
+        app:layout_heightPercent="90%"
+        app:layout_widthPercent="86%">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:background="@android:color/holo_orange_dark"
+            android:orientation="vertical"
+            app:layout_heightPercent="15%" />
+
+        <android.support.v4.widget.Space
+            android:id="@+id/space1"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/header"
+            android:background="@android:color/white"
+            app:layout_heightPercent="4%" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/space1"
+            app:layout_heightPercent="30%">
+
+            <LinearLayout
+                android:id="@+id/box1"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/holo_blue_dark"
+                android:orientation="horizontal"
+                app:layout_widthPercent="47.5%"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/box2"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/holo_blue_dark"
+                android:orientation="horizontal"
+                app:layout_widthPercent="47.5%"></LinearLayout>
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.v4.widget.Space
+            android:id="@+id/space2"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/row1"
+            android:background="@android:color/white"
+            app:layout_heightPercent="4%" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/space2"
+            app:layout_heightPercent="30%">
+
+            <LinearLayout
+                android:id="@+id/box3"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/holo_blue_dark"
+                android:orientation="horizontal"
+                app:layout_widthPercent="47.5%"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/box4"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/holo_blue_dark"
+                android:orientation="horizontal"
+                app:layout_widthPercent="47.5%"></LinearLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.v4.widget.Space
+            android:id="@+id/space3"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/row2"
+            android:background="@android:color/white"
+            app:layout_heightPercent="4%" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/space3"
+            app:layout_heightPercent="30%">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/ButtonStyle"
+                android:layout_alignParentLeft="true"
+                android:text="@string/btn_prev"
+                app:layout_widthPercent="47.5%" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/ButtonStyle"
+                android:layout_alignParentRight="true"
+                android:text="@string/btn_next"
+                app:layout_widthPercent="47.5%" />
+        </android.support.percent.PercentRelativeLayout>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+</android.support.percent.PercentFrameLayout>

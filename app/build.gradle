@@ -20,16 +20,19 @@ android {
 }
 
 def lombok_version = "1.16.18"
+def android_support_version = "25.3.1"
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    testCompile 'junit:junit:4.12'
 
     provided "org.projectlombok:lombok:${lombok_version}"
     annotationProcessor "org.projectlombok:lombok:${lombok_version}"
 
+    compile "com.android.support:appcompat-v7:${android_support_version}"
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile "com.android.support:percent:${android_support_version}"
+    testCompile 'junit:junit:4.12'
 }
